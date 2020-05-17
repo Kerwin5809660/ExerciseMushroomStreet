@@ -3,12 +3,20 @@ export default {
 
   addToCart(state, payload) {
     payload.check = true
+    payload.count = 1
     state.cartList.push(payload);
   },
   addCount(state, payload) {
-    payload.count++;
+    payload.count += 1
   },
-  changCheck(state, payload){
+  changeCheck(state, payload){
     payload.check =!payload.check
+  },
+  clearCheck(state){
+    state.cartList.forEach(item =>item.check=false)
+  },
+  allCheck(state){
+    state.cartList.forEach(item =>item.check=true)
   }
 };
+

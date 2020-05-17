@@ -1,49 +1,42 @@
 <template>
-  <div class="click-buttom" :class="{active:ischeck}" @click="checkClick">
-    <img src="../../../assets/img/cart/tick.svg" alt />
+  <div class="list-item">
+    <div @click="tabcheck" class="check">
+
+    </div>
   </div>
 </template>
 
 <script>
-import {mapGetters} from 'vuex'
 export default {
-  name: "CheckedButton",
+  name:"",
   components: {},
-  props: {
-    ischeck:Boolean
-  },
-  methods:{
-    checkClick(){
-      this.$emit('checkClick')
-    }
-  },
+  props: {},
   data() {
-    return {};
+    return {
+
+    };
   },
   created() {},
   mounted() {},
   activited() {},
   update() {},
   beforeRouteUpdate() {},
-  methods: {},
-  filter: {},
+  methods: {
+    tabcheck(){
+      console.log("....");
 
-  watch: {}
+    }
+  },
+  filter: {},
+  computed: {},
+  watch: {},
 };
 </script>
 
 <style scoped>
-.click-buttom {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #ccc;
-  background: #fff;
-}
+.check {
+  background: #f0f;
+  width: 100px;
 
-.active {
-  background: hotpink;
-  border: 2px solid hotpink;
 }
 </style>

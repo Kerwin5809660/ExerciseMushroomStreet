@@ -36,6 +36,7 @@ export default {
   beforeRouteUpdate() {},
   methods: {
     activeClick(index) {
+      // console.log(index);
       this.currentIndex = index;
       this.$emit('tabclick',index)
     }

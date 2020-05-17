@@ -1,7 +1,6 @@
 <template>
   <div class="list-item">
     <div class="item-buttom">
-      <CheckedButton :ischeck="item.check" @checkClick='changeChecked'/>
     </div>
     <div class="item-img">
       <img :src="item.img" alt />
@@ -18,7 +17,6 @@
 </template>
 
 <script>
-import CheckedButton from "../children-cpmponents/CheckedButton";
 export default {
   name: "CartListItem",
   components: {

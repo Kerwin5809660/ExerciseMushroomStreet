@@ -6,7 +6,6 @@ export default {
     if (oldCartInfo) {
       context.commit("addCount", oldCartInfo);
     } else {
-      payload.count= 1
       context.commit("addToCart", payload);
     }
   }

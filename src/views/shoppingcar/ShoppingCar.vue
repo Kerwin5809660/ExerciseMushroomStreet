@@ -26,7 +26,8 @@ export default {
     NavBar,
     CartList,
     CartBottomBar,
-    Bscroll
+    Bscroll,
+    CheckedButton
   },
   props: {},
   data() {

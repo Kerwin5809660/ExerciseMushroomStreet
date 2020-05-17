@@ -11,7 +11,7 @@
         <div class="fa fa-star" slot="tab-icon-active" ></div>
         <div slot="tab-text">分类</div>
       </TabbarItem>
-      <TabbarItem path="shoppingcar" activeColor="red">
+      <TabbarItem path="cart" activeColor="red">
         <div class="fa fa-home" slot="tab-icon"></div>
         <div class="fa fa-star" slot="tab-icon-active" ></div>
         <div slot="tab-text">购物车</div>
